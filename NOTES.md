@@ -24,8 +24,11 @@ The following features have been added.
 • Some examples from Stack Overflow
 
 https://stackoverflow.com/questions/49263227/problems-returning-the-length-of-the-longest-string-among-the-values-of-input-in/49263871
+
 https://www.geeksforgeeks.org/how-to-find-the-entry-with-largest-key-in-a-java-map/
+
 https://stackoverflow.com/questions/5911174/finding-key-associated-with-max-value-in-a-java-map
+
 https://stackoverflow.com/questions/11647889/sorting-the-mapkey-value-in-descending-order-based-on-the-value
 
 
