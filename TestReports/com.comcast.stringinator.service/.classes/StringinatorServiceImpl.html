@@ -1,0 +1,192 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: StringinatorServiceImpl</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">com.comcast.stringinator.service</a> ]
+</div>
+
+<h1>Coverage Summary for Class: StringinatorServiceImpl (com.comcast.stringinator.service)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">StringinatorServiceImpl</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (6/ 6)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    97.7%
+  </span>
+  <span class="absValue">
+    (43/ 44)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;package com.comcast.stringinator.service;
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;
+<i>4</i>&nbsp;import com.comcast.stringinator.model.StatsResult;
+<i>5</i>&nbsp;import com.comcast.stringinator.model.StringinatorInput;
+<i>6</i>&nbsp;import com.comcast.stringinator.model.StringinatorResult;
+<i>7</i>&nbsp;import org.springframework.stereotype.Service;
+<i>8</i>&nbsp;
+<i>9</i>&nbsp;import java.util.Comparator;
+<i>10</i>&nbsp;import java.util.HashMap;
+<i>11</i>&nbsp;import java.util.Map;
+<i>12</i>&nbsp;import java.util.Optional;
+<i>13</i>&nbsp;
+<i>14</i>&nbsp;@Service
+<b class="fc"><i>15</i>&nbsp;public class StringinatorServiceImpl implements StringinatorService {</b>
+<i>16</i>&nbsp;
+<b class="fc"><i>17</i>&nbsp;    private Map&lt;String, Integer&gt; seenStrings = new HashMap&lt;&gt;();</b>
+<i>18</i>&nbsp;
+<b class="fc"><i>19</i>&nbsp;    Map&lt;String, Integer&gt; statsMap = new HashMap&lt;&gt;();</b>
+<i>20</i>&nbsp;
+<i>21</i>&nbsp;    @Override
+<i>22</i>&nbsp;    public StringinatorResult stringinate(StringinatorInput input) {
+<b class="fc"><i>23</i>&nbsp;        seenStrings.compute(input.getInput(), (k, v) -&gt; (v == null) ? Integer.valueOf(1) : v + 1);</b>
+<b class="fc"><i>24</i>&nbsp;        Optional&lt;Character&gt; key = null;</b>
+<b class="fc"><i>25</i>&nbsp;        Map&lt;Character, Integer&gt; charCountMap = getMaxOccurringChar(input.getInput());</b>
+<b class="fc"><i>26</i>&nbsp;        Optional&lt;Character&gt; firstKey = charCountMap.keySet().stream().findFirst();</b>
+<b class="fc"><i>27</i>&nbsp;        if (firstKey.isPresent()) {</b>
+<b class="fc"><i>28</i>&nbsp;            key = Optional.of(firstKey.get());</b>
+<i>29</i>&nbsp;        }
+<b class="fc"><i>30</i>&nbsp;        String inputStr = input.getInput();</b>
+<i>31</i>&nbsp;
+<b class="fc"><i>32</i>&nbsp;        StringinatorResult result = new StringinatorResult</b>
+<b class="fc"><i>33</i>&nbsp;                (inputStr, Integer.valueOf(input.getInput().length()),key.get(),charCountMap.get(key.get()));</b>
+<i>34</i>&nbsp;
+<b class="fc"><i>35</i>&nbsp;        if(statsMap.get(inputStr)==null){</b>
+<b class="fc"><i>36</i>&nbsp;            statsMap.put(inputStr,1);</b>
+<i>37</i>&nbsp;        }else{
+<b class="nc"><i>38</i>&nbsp;            statsMap.put(inputStr,statsMap.get(inputStr)+1);</b>
+<i>39</i>&nbsp;        }
+<i>40</i>&nbsp;
+<b class="fc"><i>41</i>&nbsp;        return result;</b>
+<i>42</i>&nbsp;    }
+<i>43</i>&nbsp;
+<i>44</i>&nbsp;    @Override
+<i>45</i>&nbsp;    public StatsResult stats() {
+<i>46</i>&nbsp;
+<b class="fc"><i>47</i>&nbsp;        return new StatsResult(statsMap,entriesSortedByValues(statsMap),getPopularValue(statsMap));</b>
+<i>48</i>&nbsp;    }
+<i>49</i>&nbsp;
+<i>50</i>&nbsp;    static String getPopularValue(Map&lt;String, Integer&gt; statsMap){
+<b class="fc"><i>51</i>&nbsp;        if(statsMap!=null &amp;&amp; statsMap.size()!=0){</b>
+<b class="fc"><i>52</i>&nbsp;            return statsMap.keySet().stream()</b>
+<b class="fc"><i>53</i>&nbsp;                    .max(Comparator.comparingInt(String::length))</b>
+<b class="fc"><i>54</i>&nbsp;                    .get();</b>
+<i>55</i>&nbsp;        }else{
+<b class="fc"><i>56</i>&nbsp;            return null;</b>
+<i>57</i>&nbsp;        }
+<i>58</i>&nbsp;
+<i>59</i>&nbsp;    }
+<i>60</i>&nbsp;
+<i>61</i>&nbsp;    static Map&lt;Character, Integer&gt; getMaxOccurringChar(String str)
+<i>62</i>&nbsp;    {
+<b class="fc"><i>63</i>&nbsp;        Map&lt;Character, Integer&gt; charCountMap = new HashMap&lt;&gt;();</b>
+<b class="fc"><i>64</i>&nbsp;        final int ASCII_SIZE = 256;</b>
+<i>65</i>&nbsp;        // Create array to keep the count of individual
+<i>66</i>&nbsp;        // characters and initialize the array as 0
+<b class="fc"><i>67</i>&nbsp;        int count[] = new int[ASCII_SIZE];</b>
+<i>68</i>&nbsp;
+<i>69</i>&nbsp;        // Construct character count array from the input
+<i>70</i>&nbsp;        // string.
+<b class="fc"><i>71</i>&nbsp;        int len = str.length();</b>
+<b class="fc"><i>72</i>&nbsp;        for (int i=0; i&lt;len; i++)</b>
+<b class="fc"><i>73</i>&nbsp;            count[str.charAt(i)]++;</b>
+<i>74</i>&nbsp;
+<b class="fc"><i>75</i>&nbsp;        int max = -1;  // Initialize max count</b>
+<b class="fc"><i>76</i>&nbsp;        char result = &#39; &#39;;   // Initialize result</b>
+<i>77</i>&nbsp;
+<i>78</i>&nbsp;        // Traversing through the string and maintaining
+<i>79</i>&nbsp;        // the count of each character
+<b class="fc"><i>80</i>&nbsp;        for (int i = 0; i &lt; len; i++) {</b>
+<b class="fc"><i>81</i>&nbsp;            if (max &lt; count[str.charAt(i)]) {</b>
+<b class="fc"><i>82</i>&nbsp;                max = count[str.charAt(i)];</b>
+<b class="fc"><i>83</i>&nbsp;                result = str.charAt(i);</b>
+<i>84</i>&nbsp;            }
+<i>85</i>&nbsp;        }
+<i>86</i>&nbsp;
+<b class="fc"><i>87</i>&nbsp;        charCountMap.put(result,max);</b>
+<i>88</i>&nbsp;
+<b class="fc"><i>89</i>&nbsp;        return charCountMap;</b>
+<i>90</i>&nbsp;    }
+<i>91</i>&nbsp;
+<i>92</i>&nbsp;    static Map&lt;String, Integer&gt; entriesSortedByValues(Map&lt;String, Integer&gt; sortMap) {
+<i>93</i>&nbsp;
+<b class="fc"><i>94</i>&nbsp;        Map.Entry&lt;String, Integer&gt; maxEntry = null;</b>
+<i>95</i>&nbsp;
+<b class="fc"><i>96</i>&nbsp;        for (Map.Entry&lt;String, Integer&gt; entry : sortMap.entrySet()) {</b>
+<b class="fc"><i>97</i>&nbsp;            if (maxEntry == null || entry.getValue().compareTo(maxEntry.getValue()) &gt; 0) {</b>
+<b class="fc"><i>98</i>&nbsp;                maxEntry = entry;</b>
+<i>99</i>&nbsp;            }
+<b class="fc"><i>100</i>&nbsp;        }</b>
+<i>101</i>&nbsp;
+<b class="fc"><i>102</i>&nbsp;        if(maxEntry==null){</b>
+<b class="fc"><i>103</i>&nbsp;            return null;</b>
+<i>104</i>&nbsp;        }else{
+<b class="fc"><i>105</i>&nbsp;            return Map.ofEntries(maxEntry);</b>
+<i>106</i>&nbsp;        }
+<i>107</i>&nbsp;
+<i>108</i>&nbsp;    }
+<i>109</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2021-07-27 23:17</div>
+</div>
+</body>
+</html>

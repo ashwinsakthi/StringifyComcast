@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="625ab20c-02a5-446d-84e3-31f4bb9a5335" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OPEN_IN_BROWSER" value="true" />
+    <option name="OUTPUT_DIRECTORY" value="C:\YoutubeProjects\SparkProgrammingInScala-master\StringifyComcast" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1vi75oOw9rADoU56gDZ9hXF1yXQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/comcast/stringinator" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.42413792" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager" selected="JUnit.com.comcast.stringinator in StringifyComcast">
+    <configuration name="All in StringifyComcast" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="StringifyComcast" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringinatorServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="StringifyComcast" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.comcast.stringinator.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.comcast.stringinator.service" />
+      <option name="MAIN_CLASS_NAME" value="com.comcast.stringinator.service.StringinatorServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringinatorServiceImplTest.testEntriesSortedByValuesFail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="StringifyComcast" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.comcast.stringinator.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.comcast.stringinator.service" />
+      <option name="MAIN_CLASS_NAME" value="com.comcast.stringinator.service.StringinatorServiceImplTest" />
+      <option name="METHOD_NAME" value="testEntriesSortedByValuesFail" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringinatorServiceImplTest.testStringinate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="StringifyComcast" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.comcast.stringinator.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.comcast.stringinator.service" />
+      <option name="MAIN_CLASS_NAME" value="com.comcast.stringinator.service.StringinatorServiceImplTest" />
+      <option name="METHOD_NAME" value="testStringinate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.comcast.stringinator in StringifyComcast" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="StringifyComcast" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.comcast.stringinator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.comcast.stringinator" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.com.comcast.stringinator in StringifyComcast" />
+        <item itemvalue="JUnit.All in StringifyComcast" />
+        <item itemvalue="JUnit.StringinatorServiceImplTest" />
+        <item itemvalue="JUnit.StringinatorServiceImplTest.testStringinate" />
+        <item itemvalue="JUnit.StringinatorServiceImplTest.testEntriesSortedByValuesFail" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="625ab20c-02a5-446d-84e3-31f4bb9a5335" name="Default Changelist" comment="" />
+      <created>1627032874868</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1627032874868</updated>
+      <workItem from="1627032879564" duration="4639000" />
+      <workItem from="1627183924825" duration="4594000" />
+      <workItem from="1627188654530" duration="2623000" />
+      <workItem from="1627407370482" duration="625000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="250" y="0" key="#Project_Structure" timestamp="1627033729481">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="250" y="0" key="#Project_Structure/0.0.1536.834@0.0.1536.834" timestamp="1627033729481" />
+    <state x="100" y="100" width="1336" height="634" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1627188766243">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="100" y="100" width="1336" height="634" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1536.834@0.0.1536.834" timestamp="1627188766243" />
+    <state x="575" y="134" key="#com.intellij.ide.util.MemberChooser" timestamp="1627186374960">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="575" y="134" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1627186374960" />
+    <state x="475" y="101" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1627185775176">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="475" y="101" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.834@0.0.1536.834" timestamp="1627185775176" />
+    <state x="1002" y="166" key="#xdebugger.evaluate" timestamp="1627189532711">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="1002" y="166" key="#xdebugger.evaluate/0.0.1536.834@0.0.1536.834" timestamp="1627189532711" />
+    <state width="406" height="466" key="DebuggerActiveHint" timestamp="1627189491062">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="406" height="466" key="DebuggerActiveHint/0.0.1536.834@0.0.1536.834" timestamp="1627189491062" />
+    <state x="550" y="173" key="FileChooserDialogImpl" timestamp="1627408036312">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="550" y="173" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1627408036312" />
+    <state width="1480" height="312" key="GridCell.Tab.0.bottom" timestamp="1627408005533">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1480" height="312" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1627408005533" />
+    <state width="1480" height="312" key="GridCell.Tab.0.center" timestamp="1627408005533">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1480" height="312" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1627408005533" />
+    <state width="1480" height="312" key="GridCell.Tab.0.left" timestamp="1627408005532">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1480" height="312" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1627408005532" />
+    <state width="1480" height="312" key="GridCell.Tab.0.right" timestamp="1627408005533">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1480" height="312" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1627408005533" />
+    <state width="1480" height="263" key="GridCell.Tab.1.bottom" timestamp="1627197059735">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1480" height="263" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1627197059735" />
+    <state width="1480" height="263" key="GridCell.Tab.1.center" timestamp="1627197059735">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1480" height="263" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1627197059735" />
+    <state width="1480" height="263" key="GridCell.Tab.1.left" timestamp="1627197059734">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1480" height="263" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1627197059734" />
+    <state width="1480" height="263" key="GridCell.Tab.1.right" timestamp="1627197059735">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1480" height="263" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1627197059735" />
+    <state width="1480" height="263" key="GridCell.Tab.2.bottom" timestamp="1627187158619">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1480" height="263" key="GridCell.Tab.2.bottom/0.0.1536.834@0.0.1536.834" timestamp="1627187158619" />
+    <state width="1480" height="263" key="GridCell.Tab.2.center" timestamp="1627187158618">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1480" height="263" key="GridCell.Tab.2.center/0.0.1536.834@0.0.1536.834" timestamp="1627187158618" />
+    <state width="1480" height="263" key="GridCell.Tab.2.left" timestamp="1627187158618">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1480" height="263" key="GridCell.Tab.2.left/0.0.1536.834@0.0.1536.834" timestamp="1627187158618" />
+    <state width="1480" height="263" key="GridCell.Tab.2.right" timestamp="1627187158618">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1480" height="263" key="GridCell.Tab.2.right/0.0.1536.834@0.0.1536.834" timestamp="1627187158618" />
+    <state x="278" y="63" key="SettingsEditor" timestamp="1627188557003">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="278" y="63" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1627188557003" />
+    <state x="584" y="196" key="chooseDestDirectoryDialog" timestamp="1627033239910">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="584" y="196" key="chooseDestDirectoryDialog/0.0.1536.834@0.0.1536.834" timestamp="1627033239910" />
+    <state x="564" y="165" key="refactoring.ChangeSignatureDialog" timestamp="1627185918375">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="564" y="165" key="refactoring.ChangeSignatureDialog/0.0.1536.834@0.0.1536.834" timestamp="1627185918375" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/comcast/stringinator/service/StringinatorServiceImpl.java</url>
+          <line>49</line>
+          <properties class="com.comcast.stringinator.service.StringinatorServiceImpl" method="getPopularValue">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/comcast/stringinator/service/StringinatorServiceImplTest.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/StringifyComcast$com_comcast_stringinator_in_StringifyComcast.ic" NAME="com.comcast.stringinator in StringifyComcast Coverage Results" MODIFIED="1627408005272" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.comcast.stringinator.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/StringifyComcast$All_in_StringifyComcast.ic" NAME="All in StringifyComcast Coverage Results" MODIFIED="1627190842639" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
