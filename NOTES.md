@@ -39,3 +39,6 @@ A Basic Rest API with the aim of achieving the desired functionality has been co
 A Simple Controller with Service Classes and pojos for JSON generation.
 
 Unit Test Cases and Functional test cases covering 80% of the code has been taken care.
+
+https://stackoverflow.com/questions/38635381/how-to-manually-commit-offset-in-spark-kafka-direct-streaming
+
