@@ -42,3 +42,16 @@ Unit Test Cases and Functional test cases covering 80% of the code has been take
 
 https://stackoverflow.com/questions/38635381/how-to-manually-commit-offset-in-spark-kafka-direct-streaming
 
+ You can use Spark Streaming to consume your messages from Kafka topics, store them in MongoDB and then again repost them to some other Kafka topics (as per your requirement)
+
+If you choose to use Spark Streaming, please make sure to use Reliable Receivers so that there is no data loss due to any kind of failure as this is one of your main requirements to replace the java based application (running on WLP) with Spark.
+
+Spark can run as a standalone app (using threads to simulate distribution) or using a cluster manager like Kubernetes, YARN or built-in Spark Standalone. With cluster managers you can use more CPUs and increase throughput.
+
+In case of failure , the same process should pick up the Kafka messages and reprocess the same.
+
+Yes. That's a Kafka consumer's contract (so it should also work similarly in different envs like this PaaS / WebSphere setup).
+
+I'd consider Spark but not for "Resiliency, Scalability, Performance, No Data Loss, and Maintainability" but simply because what you're doing is batch processing and does not need a full-blown application server that is up and running all the time.
+
+
